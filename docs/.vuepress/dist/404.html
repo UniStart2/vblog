@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.60">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <script type="text/javascript" src="/font/iconfont.js"></script><link rel="stylesheet" type="text/css" href="/font/iconfont.css"><title>learning vue</title><meta name="description" content="Notes: vue related learning records">
+    <link rel="preload" href="/vuepress/assets/style-83933d7b.css" as="style"><link rel="stylesheet" href="/vuepress/assets/style-83933d7b.css">
+    <link rel="modulepreload" href="/vuepress/assets/app-8901466e.js"><link rel="modulepreload" href="/vuepress/assets/framework-96b046e1.js"><link rel="modulepreload" href="/vuepress/assets/404.html-46166703.js"><link rel="modulepreload" href="/vuepress/assets/404.html-60b35caa.js"><link rel="prefetch" href="/vuepress/assets/index.html-d9551664.js" as="script"><link rel="prefetch" href="/vuepress/assets/index.html-be22a482.js" as="script"><link rel="prefetch" href="/vuepress/assets/index.html-f276ccfa.js" as="script"><link rel="prefetch" href="/vuepress/assets/index.html-35f31dac.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>That&#39;s a Four-Oh-Four.</blockquote><a href="/vuepress/" class="">Take me home</a></div></main></div><!----><!--]--></div>
+    <script type="module" src="/vuepress/assets/app-8901466e.js" defer></script>
+  </body>
+</html>
