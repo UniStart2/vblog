@@ -1,3 +1,5 @@
+name: Build and Deploy
+
 on:
   # 每当 push 到 main 分支时触发部署
   push:
@@ -6,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +28,7 @@ jobs:
 
       # 安装VuePress
       - name: Install VuePress
-        run: npm install -D vuepress
+        run: npm install -D vuepress@lastest
 
       # 运行构建脚本
       - name: Build VuePress site
