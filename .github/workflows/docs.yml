@@ -28,7 +28,7 @@ jobs:
 
       # 安装VuePress
       - name: Install VuePress
-        run: npm install -D vuepress
+        run: npm install -D vuepress@next
 
       # 运行构建脚本
       - name: Build VuePress site
