@@ -2,7 +2,7 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
 
 export default defineUserConfig({
-  base: "/vuepress/",  // 部署站点的基础路径，默认为"/"
+  base: '/vuepress/',  // 部署站点的基础路径，默认为"/"
   head: [  // 在最终渲染出的 HTML 的 <head> 标签内加入的额外标签
     ['script', {type: 'text/javascript', src: '/font/iconfont.js'}],
     ['link', {rel: 'stylesheet', type: 'text/css', href: '/font/iconfont.css'}],

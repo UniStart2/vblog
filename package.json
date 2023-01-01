@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:build": "vuepress build docs"
   },
-  "author": "",
+  "author": "unistart",
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.60"
