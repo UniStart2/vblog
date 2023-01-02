@@ -1,6 +1,7 @@
 ---
-date: 2023-01-01
-description: VuePress 测试页面
+lang: zh-CN
+date: 2023-01-02
+description: 关于
 # 页面head标签内添加额外标签
 head:
   - [meta, {charset: 'utf-8'}]
@@ -9,4 +10,4 @@ head:
   - [meta, {name: 'keywords', content: 'unistart,unistart2,vue,vue2,vu3,study'}]
 ---
 
-# Hello VuePress
+关于
