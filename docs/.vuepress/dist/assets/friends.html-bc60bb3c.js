@@ -1,0 +1,1 @@
+import{_ as e,p as t,q as s,Q as n}from"./framework-49860b1b.js";const _={},c=n("p",null,"友链",-1),o=[c];function r(a,l){return t(),s("div",null,o)}const f=e(_,[["render",r],["__file","friends.html.vue"]]);export{f as default};
