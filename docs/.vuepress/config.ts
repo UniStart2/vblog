@@ -5,26 +5,30 @@ import { defaultTheme } from 'vuepress'
 export default defineUserConfig({
   base: '/vuepress/',  // 部署站点的基础路径，默认为"/"
   head: [  // 在 <head> 标签内加入的额外标签
-    ['link', {rel: 'shortcut icon', href: '/favicon.png'}, ],
+    ['link', {rel: 'icon', type: 'image/png', size: '32x32', href: '/images/icons/favicon.png'}, ],
+    ['meta', {charset: 'utf-8'}],
+    ['meta', {name: 'application-name', content: "unistart's blog" }],
+    ['meta', {name: 'author', content: 'unistart'}],
+    ['meta', {name: 'keywords', content: 'unistart,unistart2,vue,vue2,vu3,study'}],
   ],
   locales: {// 站点多语言配置
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'en-US',
-      title: `UniStart's Vue Study Notes`,
+      title: `UniStart's Vue Study Blog`,
       description: `Notes: Vue related learning records`,
     },
     '/zh/': {
       lang: 'zh-CN',
-      title: `UniStart's Vue 学习笔记`,
+      title: `UniStart's Vue 学习博客`,
       description: `笔记: Vue相关学习记录`,
     },
   },
   theme: defaultTheme({ // 默认主题配置
     logo: '/logo.png',
     repo: 'UniStart2/vuepress',
-    editLink: true,
+    editLink: false,
     editLinkPattern: ':repo/edit/:branch/:path',
     docsRepo: 'https://github.com/UniStart2/vuepress',
     docsBranch: 'main',
@@ -86,10 +90,33 @@ export default defineUserConfig({
         selectLanguageText: '选择语言',
         selectLanguageName: '简体中文',
         editLinkText: '编辑此页',
+        lastUpdatedText: '上次更新',
+        contributorsText: '贡献者',
+        tip: '提示',
+        warning: '注意',
+        danger: '警告',
+        notFound: [
+          '似乎来到了一个异次元空间',
+          '页面似乎被未知力量吞噬',
+          '你似乎来到了没有知识存在的荒原',
+          '你要的东西不在这, 到别处看看吧',
+          '非常抱歉，你要找的页面不见了',
+          '抱歉，此页面不存在',
+          '唔...该页面不存在',
+          '页面不见啦',
+          '很抱歉，无法访问此页面',
+        ], // 404页面提示信息，当用户进入404页面时随机选取一条信息展示
+        backToHome: '返回首页', 
+        openInNewWindow: '在新窗口打开',
+        toggleColorMode: '切换颜色模式',
+        toggleSidebar: '切换侧边栏',
       },
     },
+    themePlugins: { // 主题使用的插件配置
+
+    },
   }),
-  // 跳过打包工具配置
+  // 打包工具配置
   // bundler: 
 
   // --------------------- 通用配置项 ----------------------------

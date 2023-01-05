@@ -227,3 +227,89 @@ console.log("Hello, javascript")
 
   </CodeGroupItem>
 </CodeGroup>
+
+## 自定义容器
+### 提示框
+````md
+::: tip
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个 details 标签
+:::
+
+::: danger STOP
+危险区域，禁止通行
+:::
+
+::: details 点击查看代码
+```ts
+console.log('你好，VuePress！')
+```
+:::
+````
+输出
+::: tip
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个 details 标签
+:::
+
+::: danger STOP
+危险区域，禁止通行
+:::
+
+::: details 点击查看代码
+```ts
+console.log('你好，VuePress！')
+```
+:::
+
+### CodeGroup
+````md
+:::: code-group
+::: code-group-item FOO
+```ts
+const foo = 'foo'
+```
+:::
+::: code-group-item BAR
+```ts
+const bar = 'bar'
+```
+:::
+::::
+````
+输出
+
+:::: code-group
+::: code-group-item FOO
+```ts
+const foo = 'foo'
+```
+:::
+::: code-group-item BAR
+```ts
+const bar = 'bar'
+```
+:::
+::::
