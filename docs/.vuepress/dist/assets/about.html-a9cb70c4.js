@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-84b69354","path":"/zh/about/about.html","title":"","lang":"zh-CN","frontmatter":{"lang":"zh-CN","date":"2023-01-02T00:00:00.000Z","description":"关于","head":null},"headers":[],"git":{"updatedTime":1672672777000,"contributors":[{"name":"unistart","email":"2604249649@qq.com","commits":1}]},"filePathRelative":"zh/about/about.md"}');export{t as data};

@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
 
 export default defineUserConfig({
-  base: '/vuepress/',  // 部署站点的基础路径，默认为"/"
+  base: '/vblog/',  // 部署站点的基础路径，默认为"/"
   head: [  // 在 <head> 标签内加入的额外标签
     ['link', {rel: 'icon', type: 'image/png', size: '32x32', href: '/images/icons/favicon.png'}, ],
     ['meta', {charset: 'utf-8'}],
@@ -70,18 +70,6 @@ export default defineUserConfig({
                     'text': 'Nginx Config',
                     link: 'https://www.digitalocean.com/community/tools/nginx',
                   },
-                  {
-                    text: 'LaTex在线编辑器',
-                    link: 'https://www.latexlive.com/',
-                  }, 
-                  {
-                    text: 'Regex Learn',
-                    link: 'https://regexlearn.com/zh-cn',
-                  },
-                  {
-                    text: 'Regex101',
-                    link: 'https://regex101.com/',
-                  }
                 ]
               },
             ]
@@ -119,7 +107,7 @@ export default defineUserConfig({
   // 打包工具配置
   // bundler: 
 
-  // --------------------- 通用配置项 ----------------------------
+  // --------------------- 通用配置项开始 ----------------------------
   dest: 'docs/.vuepress/dist', // 指定vuepress build的输出目录
   temp: 'docs/.vuepress/.temp', // 指定临时文件目录
   cache: 'docs/.vuepress/.cache', // 指定缓存文件目录
@@ -130,9 +118,9 @@ export default defineUserConfig({
   pagePatterns: ['**/*.md', '!.vuepress', '!node_modules'], 
   //指定为页面生成永久链接的Pattern, 它会被每个页面的 Frontmatter 中的 permalinkPattern 字段覆盖 
   // permalinkPattern: ':slug.html', //注意: 永久链接配置项会影响页面的路由
-  // --------------------- 通用配置项 ----------------------------
+  // --------------------- 通用配置项结束 ----------------------------
 
-  // --------------------- Dev 配置项 ---------------------------
+  // --------------------- Dev 配置项开始 ---------------------------
   host: '0.0.0.0', // 指定开发服务器的主机名
   port: 8080, // 指定开发服务器的端口号
   open: true, // 是否在开发服务器启动后打开浏览器
@@ -141,9 +129,9 @@ export default defineUserConfig({
    * 默认值：'@vuepress/client/templates/dev.html'
    */
   // templateDev: '', 
-  // --------------------- Dev 配置项 ---------------------------
+  // --------------------- Dev 配置项结束 ---------------------------
 
-  //--------------------- Build 配置项 --------------------------
+  //--------------------- Build 配置项开始 --------------------------
   /** 
    * shouldPreload: 设置那些文件需要预加载
    * 默认值：true
@@ -168,9 +156,9 @@ export default defineUserConfig({
    * 默认值：'@vuepress/client/templates/build.html'
    */
   // templateBuild: '',
-  //--------------------- Build 配置项 --------------------------
+  //--------------------- Build 配置项结束 --------------------------
 
-  //-------------------- Markdown 配置项 ------------------------
+  //-------------------- Markdown 配置项开始 ------------------------
   /**
    * markdown: 对VuePress内置的Markdown语法进行扩展配置，
    * 可以接受markdown-it的所有配置项
@@ -181,11 +169,11 @@ export default defineUserConfig({
   markdown: {
     
   },
-  //-------------------- Markdown 配置项 ------------------------
+  //-------------------- Markdown 配置项结束 ------------------------
 
-  //----------------------- 插件配置 -----------------------------
+  //----------------------- 插件配置开始 -----------------------------
   plugins: [
 
   ],
-  //----------------------- 插件配置 -----------------------------
+  //----------------------- 插件配置结束 -----------------------------
 })
