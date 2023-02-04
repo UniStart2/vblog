@@ -27,10 +27,10 @@ export default defineUserConfig({
   },
   theme: defaultTheme({ // 默认主题配置
     logo: '/logo.png',
-    repo: 'UniStart2/vuepress',
+    repo: 'UniStart2/vblog',
     editLink: false,
     editLinkPattern: ':repo/edit/:branch/:path',
-    docsRepo: 'https://github.com/UniStart2/vuepress',
+    docsRepo: 'https://github.com/UniStart2/vblog',
     docsBranch: 'main',
     docsDir: 'docs',
     locales: {
@@ -104,8 +104,10 @@ export default defineUserConfig({
 
     },
   }),
-  // 打包工具配置
+
+  // --------- 打包工具配置开始（一般使用默认配置就好，不需要修改）---------
   // bundler: 
+  // -------------------- 打包工具配置结束 ---------------------------
 
   // --------------------- 通用配置项开始 ----------------------------
   dest: 'docs/.vuepress/dist', // 指定vuepress build的输出目录

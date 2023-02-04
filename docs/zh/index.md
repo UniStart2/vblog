@@ -4,10 +4,10 @@ home: true # 是否是首页，为false则是普通页面
 heroImage: /logo.png
 heroAlt: 'unistart logo'
 actions: 
-  - text: Home
+  - text: 主页
     link: /zh/
     type: primary
-  - text: Test Page
+  - text: 测试页面
     link: /zh/testpage/
     type: secondary
 features:
